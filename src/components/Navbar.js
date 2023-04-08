@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
 
 const Navbar = () => {
     const handleClick = event => {
@@ -7,6 +8,7 @@ const Navbar = () => {
         event.currentTarget.classList.add('w-full');
 
     };
+    const activeClass = (route) => { return window.location.pathname === route ? "active" : null }
     return (
         <nav className="navbar navbar-expand-lg py-0 navbar-light bg-color sticky-top">
             <div className="container">
@@ -19,27 +21,27 @@ const Navbar = () => {
                 </form>
                 <div className="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item btn">
-                            <Link className="nav-link text-light active" aria-current="page" to="#"><i className="fa-solid fa-house"></i>
-                            <br /><span  style={{fontSize: '12px'}}>Home</span></Link>
+                        <li className="nav-item btn ">
+                            <NavLink className="nav-link text-light " aria-current="page" to="/"><i className="fa-solid fa-house"></i>
+                                <br /><span style={{ fontSize: '12px' }}>Home</span></NavLink>
                         </li>
                         <li className="nav-item btn px-3">
-                            <Link className="nav-link text-light" to="#"><i className="fa-solid fa-user-group"></i>
-                            <br /><span  style={{fontSize: '12px'}}>Friends</span></Link>
+                            <NavLink className="nav-link text-light" to="/friends"><i className="fa-solid fa-user-group"></i>
+                                <br /><span style={{ fontSize: '12px' }}>Friends</span></NavLink>
+                        </li>
+                        <li className="nav-item btn  px-3">
+                            <NavLink className="nav-link text-light" to="/messages"><i className="fa-regular fa-message"></i>
+                                <br /><span style={{ fontSize: '12px' }}>Message</span></NavLink>
                         </li>
                         <li className="nav-item btn px-3">
-                            <Link className="nav-link text-light" to="#"><i className="fa-sharp fa-solid fa-bell"></i>
-                            <br /><span  style={{fontSize: '12px'}}>Notification</span></Link>
-                        </li>
-                        <li className="nav-item btn px-3">
-                            <Link className="nav-link text-light" to="#"><i className="fa-regular fa-message"></i>
-                            <br /><span  style={{fontSize: '12px'}}>Message</span></Link>
+                            <NavLink className="nav-link text-light" to="/notification"><i className="fa-sharp fa-solid fa-bell"></i>
+                                <br /><span style={{ fontSize: '12px' }}>Notification</span></NavLink>
                         </li>
                         <li className="nav-item btn dropdown">
-                            <Link className="nav-link dropdown-toggle text-light" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i className="fa-sharp fa-solid fa-user"></i> 
-                            <br /><span  style={{fontSize: '12px'}}>Shanto</span>
-                            </Link>
+                            <NavLink className="nav-link dropdown-toggle text-light" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i className="fa-sharp fa-solid fa-user"></i>
+                                <br /><span style={{ fontSize: '12px' }}>Shanto</span>
+                            </NavLink>
                             <ul className="dropdown-menu text-light" aria-labelledby="navbarDropdown">
                                 <li><Link className="dropdown-item py-2 hover" to="#">Profile</Link></li>
                                 <li><Link className="dropdown-item py-2 hover" to="#">Logout</Link></li>

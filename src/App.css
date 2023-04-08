@@ -1,3 +1,6 @@
+body::-webkit-scrollbar {
+  display: none;
+}
 .bg-color {
   background-color: #591D1D;
 }
@@ -15,6 +18,17 @@ input {
   width: 500px;
 }
 
+.link {
+  text-decoration: inherit;
+  color: rgb(30, 216, 30);
+}
+.link:hover {
+  text-decoration: inherit;
+  color: rgb(162, 244, 162);
+}
+li{
+  list-style: none;
+}
 .active {
   color: #564949;
   background-color: #b44646;

@@ -2,7 +2,7 @@ import React from 'react'
 import Main from './Main'
 import Sideber from './Sideber'
 
-const Master = () => {
+const Home = () => {
     return (
         <div className="container">
             <div className="row">
@@ -22,4 +22,4 @@ const Master = () => {
     )
 }
 
-export default Master
+export default Home
