@@ -42,7 +42,7 @@ const Navbar = () => {
                                 <br /><span style={{ fontSize: '12px' }}>Shanto</span>
                             </NavLink>
                             <ul className="dropdown-menu text-light" aria-labelledby="navbarDropdown">
-                                <li><Link className="dropdown-item py-2 hover" to="#">Profile</Link></li>
+                                <li><Link className="dropdown-item py-2 hover" to="/profile">Profile</Link></li>
                                 <li><Link className="dropdown-item py-2 hover" to="#">Logout</Link></li>
                             </ul>
                         </li>
