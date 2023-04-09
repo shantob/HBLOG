@@ -8,7 +8,6 @@ const Navbar = () => {
         event.currentTarget.classList.add('w-full');
 
     };
-    const activeClass = (route) => { return window.location.pathname === route ? "active" : null }
     return (
         <nav className="navbar navbar-expand-lg py-0 navbar-light bg-color sticky-top">
             <div className="container">
