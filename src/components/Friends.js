@@ -12,7 +12,7 @@ const Friends = () => {
           <h2 className='text-light w-100' style={{ backgroundColor: '#2a1242' }}>Friend Request <span className='text-danger ms-5 h2'>(50) </span></h2>
           {a.map(i => {
             return <Link className='corcer-pointer link'>
-              <div className="d-flex row rounded hover my-2 mx-2" style={{ backgroundColor: '#1b360b' }}>
+              <div className="d-flex row rounded hover my-2 mx-2" style={{ backgroundColor: '#2c2626' }}>
                 <div className="col-md-1">
                   <img className="rounded-circle mt-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73s9z2T_I9BOpGKQpuOL2s8ZCNLNwAnmiFb-5Rjky8-nhfNltVnKKKSdRfsmYQQIwkzQ&usqp=CAU" alt="" style={{ height: '50px', width: '40px' }} />
                 </div>
@@ -23,8 +23,8 @@ const Friends = () => {
                 <div className="col-md-8">
                   <div className="d-flex justify-content-end">
                     <p className='text-light me-3'>
-                      <button className='btn btn-success mt-3'>Accept</button>
-                      <button className='btn btn-danger mt-3 ms-2'>Delete</button>
+                      <button className='btn btn-light mt-3'>Accept</button>
+                      <button className='btn btn-dark mt-3 ms-2'>Delete</button>
                     </p>
                   </div>
                 </div>
@@ -32,13 +32,13 @@ const Friends = () => {
             </Link>
           })}
           <div className="d-flex justify-content-end">
-            <button className='w-50 btn btn-light btn-sm rounded-pill text-danger mb-3'>See More</button>
+            <button className='w-50 btn btn-dark btn-sm rounded-pill text-light mb-3'>See More</button>
           </div>
           {/* Add Friends */}
           <h2 className='text-light w-100' style={{ backgroundColor: '#2a1242' }}>Suggest Friends</h2>
           {a.map(i => {
             return <Link className='corcer-pointer link'>
-              <div className="d-flex row rounded hover my-2" style={{ backgroundColor: '#1b360b' }}>
+              <div className="d-flex row rounded hover my-2 mx-2" style={{ backgroundColor: '#2c2626' }}>
                 <div className="col-md-1">
                   <img className="rounded-circle mt-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73s9z2T_I9BOpGKQpuOL2s8ZCNLNwAnmiFb-5Rjky8-nhfNltVnKKKSdRfsmYQQIwkzQ&usqp=CAU" alt="" style={{ height: '50px', width: '40px' }} />
                 </div>
@@ -49,7 +49,7 @@ const Friends = () => {
                 <div className="col-md-8">
                   <div className="d-flex justify-content-end">
                     <p className='text-light me-3'>
-                      <button className='btn btn-info mt-3'>Add Friend</button>
+                      <button className='btn btn-light mt-3'>Add Friend</button>
                     </p>
                   </div>
                 </div>
@@ -57,7 +57,7 @@ const Friends = () => {
             </Link>
           })}
           <div className="d-flex justify-content-end">
-            <button className='w-50 btn btn-light btn-sm rounded-pill text-danger mb-3'>See More</button>
+            <button className='w-50 btn btn-dark btn-sm rounded-pill text-light mb-3'>See More</button>
           </div>
 
         </div>

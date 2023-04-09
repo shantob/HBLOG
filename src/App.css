@@ -2,7 +2,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 .bg-color {
-  background-color: #591D1D;
+  background-color: #2d1919;
 }
 
 input {
@@ -22,7 +22,7 @@ input {
 }
 .link {
   text-decoration: inherit;
-  color: rgb(30, 216, 30);
+  color: rgb(161, 239, 255);
 }
 .link:hover {
   text-decoration: inherit;
@@ -32,8 +32,9 @@ li{
   list-style: none;
 }
 .active {
-  color: #564949;
-  background-color: #b44646;
+  color: #fff8f8;
+  background-color: #4a2d2d;
+  border: #591D1D;
 }
 
 .navbar-toggler {
@@ -47,8 +48,8 @@ li{
 }
 
 .nav-item:hover {
-  color: #564949;
-  background-color: #b44646;
+  color: #151111;
+  background-color: #896666;
 }
 
 .hover:hover {

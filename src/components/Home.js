@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="col-md-8">
                     <Main />
                 </div>
-                <div className="col-md-2">
+                <div className="col-md-3">
                     <div className="d-flex justify-content-end">
                     <Sideber />
                     </div>

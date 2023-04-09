@@ -11,12 +11,19 @@ const Main = () => {
                 return <div className="card bg-dark my-2">
                     <div className="card-body bg-dark">
                         <div className="d-flex row">
-                            <div className="col-md-2">
+                            <div className="col-md-1">
                                 <img className="rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73s9z2T_I9BOpGKQpuOL2s8ZCNLNwAnmiFb-5Rjky8-nhfNltVnKKKSdRfsmYQQIwkzQ&usqp=CAU" alt="" style={{ height: '60px', width: '50px' }} />
                             </div>
                             <div className="col-md-6">
                                 <h3 className='text-info mb-0'>Shanto Bepary</h3>
                                 <span className='text-light mt-0'>27 minute ago</span>
+                            </div>
+                            <div className="col-md-5">
+                                <div className="d-flex justify-content-end">
+                                    <button className="btn btn-dark btn-lg mt-1">
+                                        <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <h2 className='text-light'>Lorem ipsum dolor sit amet.</h2>
@@ -53,10 +60,13 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-md-11">
+                                <div className="col-md-10">
                                     <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, beatae.</p>
                                 </div>
-                                <div className="col-md-1">
+                                <div className="col-md-2">
+                                    <button className="btn btn-dark btn-lg mb-1">
+                                        <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
                                     <button className='bg-dark text-info'><i className="fa-solid fa-share"></i></button>
                                 </div>
                             </div>
@@ -77,10 +87,13 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-md-1">
+                                <div className="col-md-2">
                                     <button className='bg-dark text-primary'><i className="fa-solid fa-share"></i></button>
+                                    <button className="btn btn-dark btn-lg mb-1">
+                                        <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
                                 </div>
-                                <div className="col-md-11">
+                                <div className="col-md-10">
                                     <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, beatae.</p>
                                 </div>
                             </div>
@@ -115,10 +128,13 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-md-11">
+                                <div className="col-md-10">
                                     <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, beatae.</p>
                                 </div>
-                                <div className="col-md-1">
+                                <div className="col-md-2">
+                                    <button className="btn btn-dark btn-lg mb-1">
+                                        <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                    </button>
                                     <button className='bg-dark text-info'><i className="fa-solid fa-share"></i></button>
                                 </div>
                             </div>
