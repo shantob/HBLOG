@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
-    const handleClick = event => {
-
-        event.currentTarget.classList.add('w-full');
-
+    const [inputValue, setInputValue] = useState('');
+    const [isWide, setIsWide] = useState(false);
+  
+    const handleChange = (event) => {
+      const newValue = event.target.value;
+  
+      if (newValue === '' || newValue.startsWith('0')) {
+        setIsWide(false);
+      } else {
+        setIsWide(true);
+      }
+  
+      setInputValue(newValue);
     };
     return (
         <nav className="navbar navbar-expand-lg py-0 navbar-light bg-color sticky-top">
@@ -15,9 +25,16 @@ const Navbar = () => {
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon "></span>
                 </button>
-                <form className="d-flex">
-                    <input className="form-control mx-auto" type="search" onClick={handleClick} placeholder="Search" aria-label="Search" />
-                </form>
+                <form className={`d-flex ${isWide ? 'w-full' : ''}`}>
+      <input
+        className="form-control mx-auto"
+        type="search"
+        value={inputValue}
+        onChange={handleChange}
+        placeholder="Search"
+        aria-label="Search"
+      />
+    </form>
                 <div className="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item btn ">
